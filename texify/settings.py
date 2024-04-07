@@ -9,7 +9,7 @@ import torch
 class Settings(BaseSettings):
     # General
     TORCH_DEVICE: Optional[str] = None
-    MAX_TOKENS: int = 384 # Will not work well above 768, since it was not trained with more
+    MAX_TOKENS: int = 768 # Will not work well above 768, since it was not trained with more
     MAX_IMAGE_SIZE: Dict = {"height": 420, "width": 420}
     MODEL_CHECKPOINT: str = "vikp/texify"
     BATCH_SIZE: int = 16 # Should use ~5GB of RAM
